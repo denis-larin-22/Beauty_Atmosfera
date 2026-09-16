@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Атмосфера стилю — салон краси</title>
+  <meta name="description"
+    content="Атмосфера стилю — салон краси у Харкові: чоловічі та жіночі стрижки, фарбування, завивка, догляд за волоссям, зачіски та пірсинг. Записуйтесь на візит.">
+  <link rel="icon" href="./assets/favicon.ico" sizes="any">
+  <link rel="icon" href="./assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="./assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><img src="./assets/logo-512.png" alt="Атмосфера стилю — логотип" width="44"
+            height="44"></span>
+        <span class="brand-word">
+          <span class="name">Атмосфера стилю</span>
+          <span class="sub">Салон краси</span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#послуги" class="is-active">Послуги</a>
+        <a href="#галерея">Галерея</a>
+        <a href="#відгуки">Відгуки</a>
+        <a href="#години">Як нас знайти</a>
+        <a href="pricing.html">Прейскурант</a>
+        <a href="#запис">Контакти</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="tel:+380995420024" class="phone">+38 099 542 00 24</a>
+        <a href="#запис" class="btn btn-gold">Записатись</a>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#послуги">Послуги</a>
+    <a href="#галерея">Галерея</a>
+    <a href="#відгуки">Відгуки</a>
+    <a href="#години">Як нас знайти</a>
+    <a href="pricing.html">Прейскурант</a>
+    <a href="#запис">Контакти</a>
+    <div class="header-cta">
+      <a href="tel:+380995420024" class="btn btn-ghost">+38 099 542 00 24</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO with salon photo carousel background -->
+    <section class="hero">
+      <div class="hero-carousel-bg" id="carouselTrackWrap" aria-hidden="true">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="./assets/2.jpg" alt="Стрижка чоловіка в салоні" loading="eager">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/1.jpg" alt="Фарбування волосся" loading="lazy">
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/5.jpg" alt="Стилізація волосся в салоні" loading="lazy">
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="https://images.pexels.com/photos/18186525/pexels-photo-18186525.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"
+              alt="Стрижка ножицями крупним планом" loading="lazy">
+          </div>
+
+          <div class="carousel-slide">
+            <img
+              src="https://images.pexels.com/photos/29555469/pexels-photo-29555469.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"
+              alt="Мелірування волосся" loading="lazy">
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"
+              alt="Завивка та укладка волосся" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <svg class="hero-wave" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="waveGrad" x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#a9793f" />
+            <stop offset="1" stop-color="#a9793f" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="M40 520 C160 480 180 380 120 300 C60 220 100 120 220 80" stroke="url(#waveGrad)" stroke-width="1.4" />
+        <path d="M100 560 C230 510 250 400 180 320 C110 240 150 130 280 90" stroke="url(#waveGrad)"
+          stroke-width="1.4" />
+        <path d="M170 590 C300 540 320 420 250 340 C180 260 220 140 350 100" stroke="url(#waveGrad)"
+          stroke-width="1.4" />
+        <path d="M250 600 C380 545 400 430 330 350 C260 270 300 150 430 105" stroke="url(#waveGrad)" stroke-width="1" />
+        <path d="M320 610 C440 550 450 440 390 360 C330 280 360 160 470 115" stroke="#8c6a46" stroke-width="1"
+          opacity=".4" />
+        <circle cx="440" cy="90" r="3" fill="#a9793f" />
+        <circle cx="120" cy="470" r="2" fill="#a9793f" />
+        <circle cx="500" cy="180" r="2.5" fill="#c99a5c" />
+        <circle cx="80" cy="230" r="1.6" fill="#a9793f" />
+        <circle cx="470" cy="115" r="2" fill="#8c6a46" opacity=".4" />
+      </svg>
+
+      <span class="ring ring-1" aria-hidden="true"></span>
+      <span class="ring ring-alt ring-2" aria-hidden="true"></span>
+
+      <div class="wrap">
+        <div class="hero-inner">
+          <p class="eyebrow"><span class="sparkle">✦</span>Салон краси</p>
+          <h1>Атмосфера<br><em>стилю</em></h1>
+          <p class="lede">Простір, де стрижка стає жестом, фарбування — точним рішенням, а зачіска — деталлю, що
+            завершує образ. Працюємо з характером і густотою волосся, а не за шаблоном.</p>
+          <div class="hero-actions">
+            <a href="#запис" class="btn btn-gold">Записатись на візит</a>
+            <a href="#галерея" class="btn btn-ghost">Переглянути роботи</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="num" data-count="12" data-suffix="+">0</div>
+              <div class="lbl">років у справі</div>
+            </div>
+            <div>
+              <div class="num" data-count="30" data-suffix="+">0</div>
+              <div class="lbl">видів послуг</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-carousel-ui">
+        <button type="button" class="hc-nav" id="carouselPrev" aria-label="Попереднє фото салону">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+        <div class="hc-dots" id="carouselDots">
+          <button type="button" class="is-active" aria-label="Слайд 1"></button>
+          <button type="button" aria-label="Слайд 2"></button>
+          <button type="button" aria-label="Слайд 3"></button>
+          <button type="button" aria-label="Слайд 4"></button>
+          <button type="button" aria-label="Слайд 5"></button>
+          <button type="button" aria-label="Слайд 6"></button>
+        </div>
+        <button type="button" class="hc-nav" id="carouselNext" aria-label="Наступне фото салону">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Чоловічі стрижки <em>·</em> Жіночі стрижки <em>·</em> Фарбування <em>·</em> Завивка <em>·</em> Догляд за
+          волоссям <em>·</em> Зачіски та пірсинг</span>
+        <span>Чоловічі стрижки <em>·</em> Жіночі стрижки <em>·</em> Фарбування <em>·</em> Завивка <em>·</em> Догляд за
+          волоссям <em>·</em> Зачіски та пірсинг</span>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="services" id="послуги">
+      <div class="dot-field" aria-hidden="true">
+        <span style="top:12%;left:6%;"></span>
+        <span style="top:70%;left:3%;"></span>
+        <span style="top:20%;right:5%;"></span>
+        <span style="top:82%;right:9%;"></span>
+        <span style="top:45%;left:1%;"></span>
+      </div>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><span class="sparkle">✦</span>Напрямки роботи</p>
+          <h2>Перелік послуг</h2>
+          <p>Чотири напрямки, в яких салон працює щодня. Повний прейскурант з цінами — на окремій сторінці.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="6" r="3" />
+              <circle cx="6" cy="18" r="3" />
+              <path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12" />
+            </svg>
+            <h3>Чоловічі стрижки</h3>
+            <p>Наголо, машинкою, класична стрижка, оформлення бороди, камуфляж сивини.</p>
+          </div>
+          <div class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12c2-4 6-6 8-6s6 2 8 6c-2 4-6 6-8 6s-6-2-8-6Z" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <h3>Жіночі стрижки</h3>
+            <p>Коротка, середня та довга довжина, укладка феном, стрижка кінчиків.</p>
+          </div>
+          <div class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 2v6M12 22v-6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M22 12h-6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2" />
+            </svg>
+            <h3>Фарбування та завивка</h3>
+            <p>Однотонне фарбування, AirTouch, мелірування, хімічна та біозавивка.</p>
+          </div>
+          <div class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M7 21c-2-1-3-3-3-6 0-4 3-6 3-10 2 1 3 4 3 6 1-2 1-4 3-5 0 3 1 5 3 6 1-3 2-4 3-5 1 3 2 6 2 8 0 3-1 5-3 6" />
+            </svg>
+            <h3>Догляд, зачіски та пірсинг</h3>
+            <p>Реконструкція волосся, вечірні зачіски, коси, афро-локони, проколи вух і носа.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="галерея">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><span class="sparkle">✦</span>Портфоліо</p>
+          <h2>Роботи наших майстрів</h2>
+          <p>Перемикайтесь між розділами, щоб побачити чоловічі й жіночі стрижки, фарбування, манікюр та зачіски.</p>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" data-tab="men" role="tab" aria-selected="true">Чоловічі стрижки</button>
+          <button class="tab" data-tab="women" role="tab" aria-selected="false">Жіночі стрижки та фарбування</button>
+          <button class="tab" data-tab="nails" role="tab" aria-selected="false">Манікюр</button>
+          <button class="tab" data-tab="styling" role="tab" aria-selected="false">Зачіски</button>
+        </div>
+
+        <div class="gallery-grid is-active" id="tab-men">
+          <div class="scene wide">
+            <img
+              src="https://images.pexels.com/photos/6599031/pexels-photo-6599031.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+              alt="Чоловіча стрижка в салоні" loading="lazy">
+          </div>
+          <div class="scene tall">
+            <img
+              src="https://images.pexels.com/photos/3998417/pexels-photo-3998417.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Оформлення бороди в барбершопі" loading="lazy">
+          </div>
+          <div class="scene">
+            <img
+              src="https://images.pexels.com/photos/18186525/pexels-photo-18186525.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Стрижка ножицями крупним планом" loading="lazy">
+          </div>
+          <div class="scene">
+            <img
+              src="https://images.pexels.com/photos/9992819/pexels-photo-9992819.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Барбершоп-стиль" loading="lazy">
+          </div>
+          <div class="scene wide">
+            <img
+              src="https://images.pexels.com/photos/6007395/pexels-photo-6007395.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+              alt="Грумінг та стрижка бороди" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="tab-women">
+          <div class="scene wide">
+            <img
+              src="https://images.pexels.com/photos/4981476/pexels-photo-4981476.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+              alt="Фарбування волосся" loading="lazy">
+          </div>
+          <div class="scene tall">
+            <img
+              src="https://images.pexels.com/photos/29555469/pexels-photo-29555469.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Мелірування волосся фольгою" loading="lazy">
+          </div>
+          <div class="scene">
+            <img
+              src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Завивка волосся в салоні" loading="lazy">
+          </div>
+          <div class="scene">
+            <img
+              src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Кучеряве укладання волосся" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="tab-nails">
+          <div class="scene wide">
+            <img
+              src="https://images.pexels.com/photos/5871831/pexels-photo-5871831.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+              alt="Яскравий дизайн манікюру" loading="lazy">
+          </div>
+          <div class="scene tall">
+            <img
+              src="https://images.pexels.com/photos/13068361/pexels-photo-13068361.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Манікюрна станція в салоні" loading="lazy">
+          </div>
+          <div class="scene">
+            <img
+              src="https://images.pexels.com/photos/5870539/pexels-photo-5870539.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Манікюр з покриттям" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="tab-styling">
+          <div class="scene wide">
+            <img
+              src="https://images.pexels.com/photos/15507420/pexels-photo-15507420.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+              alt="Вечірня зачіска з прикрасами" loading="lazy">
+          </div>
+          <div class="scene tall">
+            <img
+              src="https://images.pexels.com/photos/19875392/pexels-photo-19875392.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Прокол вух з сережкою" loading="lazy">
+          </div>
+          <div class="scene">
+            <img
+              src="https://images.pexels.com/photos/3331486/pexels-photo-3331486.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Стильна жіноча зачіска" loading="lazy">
+          </div>
+          <div class="scene">
+            <img
+              src="https://images.pexels.com/photos/15507425/pexels-photo-15507425.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+              alt="Весільна зачіска крупним планом" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider to-tint" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,32 C240,58 480,4 720,30 C960,56 1200,6 1440,28 L1440,60 L0,60 Z"></path>
+    </svg>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="відгуки">
+      <span class="ring" style="width:180px;height:180px;top:-60px;left:-40px;" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><span class="sparkle">✦</span>Відгуки</p>
+          <h2>Що кажуть наші клієнтки</h2>
+          <p>Кілька слів від тих, хто вже побував у салоні. Прогортайте, щоб прочитати більше.</p>
+        </div>
+
+        <div class="review-track" id="reviewTrack">
+          <div class="review-card">
+            <div class="mark">“</div>
+            <p>Юлія — чудовий майстер, дуже уважна до деталей. Прийшла вперше і одразу відчула, наскільки тут дбають про
+              кожну клієнтку. Результат перевершив очікування.</p>
+            <div class="who">
+              <span class="avatar">О</span>
+              <span class="name">Олена</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="mark">“</div>
+            <p>Дуже акуратна робота і приємна атмосфера. Майстер уважно слухає побажання і завжди пропонує вдале
+              рішення. Волосся після процедур у чудовому стані.</p>
+            <div class="who">
+              <span class="avatar">Н</span>
+              <span class="name">Наталія</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="mark">“</div>
+            <p>Робила афро-косички з канікалоном — тримались більше місяця і виглядали акуратно від першого до
+              останнього дня. Майстри знають, як працювати з різними типами волосся.</p>
+            <div class="who">
+              <span class="avatar">М</span>
+              <span class="name">Марія</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="mark">“</div>
+            <p>Прийшла на консультацію щодо кольору — мені детально пояснили всі етапи й порадили формат, який справді
+              пасує. Рекомендую знайомим.</p>
+            <div class="who">
+              <span class="avatar">І</span>
+              <span class="name">Ірина</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-controls">
+          <button type="button" id="reviewPrev" aria-label="Попередній відгук">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <button type="button" id="reviewNext" aria-label="Наступний відгук">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider flip" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,32 C240,58 480,4 720,30 C960,56 1200,6 1440,28 L1440,60 L0,60 Z"></path>
+    </svg>
+
+    <!-- HOURS + MAP -->
+    <section class="visit" id="години">
+      <div class="dot-field" aria-hidden="true">
+        <span style="top:8%;right:8%;"></span>
+        <span style="top:60%;right:2%;"></span>
+        <span style="top:30%;left:2%;"></span>
+        <span style="top:88%;left:10%;"></span>
+      </div>
+      <div class="wrap">
+        <div class="visit-grid">
+          <div>
+            <p class="eyebrow"><span class="sparkle">✦</span>Графік роботи</p>
+            <h2>Коли ми чекаємо на вас</h2>
+
+            <div class="hours-list">
+              <div class="hours-row"><span>Щодня</span><span>09:00 — 19:00</span></div>
+            </div>
+            <p class="hours-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+              </svg>
+              Працюємо навіть без світла
+            </p>
+
+            <div class="address-block">
+              <div class="line">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3">
+                  <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
+                  <circle cx="12" cy="9" r="2.5" />
+                </svg>
+                <span>м. Харків, вул. Гвардійців-Широнінців, 26<br>(вхід з дороги)</span>
+              </div>
+              <div class="line">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3">
+                  <path
+                    d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" />
+                </svg>
+                <a href="tel:+380995420024">+38 099 542 00 24</a>
+              </div>
+              <div class="line">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" />
+                </svg>
+                <a href="https://www.instagram.com/julia.oksana_kh?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw=="
+                  target="_blank" rel="noopener">Instagram: Beauty_Atmosfera</a>
+              </div>
+              <div class="line">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.3">
+                  <path
+                    d="M16 8.5c-1.7 0-3-1-3.4-2.5V15a4.5 4.5 0 1 1-4.5-4.5c.3 0 .6 0 .9.1v2.1a2.4 2.4 0 1 0 1.7 2.3V3h2.1a4.1 4.1 0 0 0 3.2 3.9V8.5Z" />
+                </svg>
+                <a href="https://www.tiktok.com/@julia_magicbeauti?_r=1&_t=ZS-99iUvJJlpRd" target="_blank"
+                  rel="noopener">TikTok:
+                  Beauty_Atmosfera</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-frame">
+            <iframe
+              src="https://maps.google.com/maps?q=%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%2C%20%D0%B2%D1%83%D0%BB.%20%D0%93%D0%B2%D0%B0%D1%80%D0%B4%D1%96%D0%B9%D1%86%D1%96%D0%B2-%D0%A8%D0%B8%D1%80%D0%BE%D0%BD%D1%96%D0%BD%D1%86%D1%96%D0%B2%2C%2026&z=16&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Атмосфера стилю на карті"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALLBACK -->
+    <section class="callback" id="запис">
+      <div class="wrap">
+        <div class="callback-panel">
+          <span class="ring ring-alt ring-3" aria-hidden="true"></span>
+          <div class="callback-copy">
+            <p class="eyebrow"><span class="sparkle">✦</span>Запис на візит</p>
+            <h2>Ми вам передзвонимо</h2>
+            <p>Залиште ім'я та номер телефону — адміністратор зв'яжеться з вами, щоб підібрати майстра й зручний час.
+            </p>
+          </div>
+
+          <form id="callbackForm" novalidate>
+            <div class="field" id="nameField">
+              <label for="name">Ім'я</label>
+              <input type="text" id="name" name="name" placeholder="Як до вас звертатись" autocomplete="name">
+              <p class="field-error">Вкажіть, будь ласка, ваше ім'я.</p>
+            </div>
+            <div class="field" id="phoneField">
+              <label for="phone">Номер телефону</label>
+              <input type="tel" id="phone" name="phone" placeholder="+38 (___) ___‑__‑__" autocomplete="tel">
+              <p class="field-error">Перевірте формат номера телефону.</p>
+            </div>
+            <div class="field">
+              <label for="message">Побажання (необов'язково)</label>
+              <textarea id="message" name="message"
+                placeholder="Наприклад: стрижка + фарбування, зручно у вихідні"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold">Замовити дзвінок</button>
+            <p class="form-note">Натискаючи кнопку, ви погоджуєтесь на обробку контактних даних для зворотного зв'язку.
+            </p>
+            <p class="form-status" id="formStatus">Дякуємо! Ми передзвонимо вам найближчим часом.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <svg class="divider to-white" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,30 C240,4 480,56 720,30 C960,4 1200,54 1440,30 L1440,60 L0,60 Z"></path>
+  </svg>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-about">
+          <span class="brand-mark"><img src="./assets/logo-512.png" alt="Атмосфера стилю — логотип" width="44"
+              height="44"></span>
+          <p>Атмосфера стилю — салон краси у Харкові. Чоловічі та жіночі стрижки, фарбування, завивка, догляд за
+            волоссям, зачіски та пірсинг в одному просторі.</p>
+          <div class="socials">
+            <a href="https://www.tiktok.com/@julia_magicbeauti?_r=1&_t=ZS-99iUvJJlpRd" target="_blank" rel="noopener"
+              aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.4">
+                <path
+                  d="M16 8.5c-1.7 0-3-1-3.4-2.5V15a4.5 4.5 0 1 1-4.5-4.5c.3 0 .6 0 .9.1v2.1a2.4 2.4 0 1 0 1.7 2.3V3h2.1a4.1 4.1 0 0 0 3.2 3.9V8.5Z" />
+              </svg></a>
+            <a href="https://www.instagram.com/julia.oksana_kh?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw=="
+              target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
+                stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Сторінки</h4>
+          <ul>
+            <li><a href="#послуги">Послуги</a></li>
+            <li><a href="#галерея">Галерея</a></li>
+            <li><a href="pricing.html">Прейскурант</a></li>
+            <li><a href="#запис">Запис на візит</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакти</h4>
+          <ul>
+            <li>м. Харків, вул. Гвардійців-Широнінців, 26</li>
+            <li><a href="tel:+380995420024">+38 099 542 00 24</a></li>
+            <li><a
+                href="https://www.instagram.com/julia.oksana_kh?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw=="
+                target="_blank" rel="noopener">Instagram: Beauty_Atmosfera</a></li>
+            <li><a href="https://www.tiktok.com/@julia_magicbeauti?_r=1&_t=ZS-99iUvJJlpRd" target="_blank"
+                rel="noopener">TikTok:
+                Beauty_Atmosfera</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Атмосфера стилю. Усі права захищено.</span>
+        <span>Салон краси у Харкові</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#запис" class="float-cta" id="floatCta" aria-label="Записатись на візит">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path
+        d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
